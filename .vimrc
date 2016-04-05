@@ -5,8 +5,9 @@ set nocompatible
 " Switch off backups to *.*~ files
 set nobackup
 
-" Enable syntax highlighting
+" Enable syntax highlighting and colorscheme
 syntax on
+colorscheme monokai
 
 " Set tabstops size to 4
 set tabstop=4
