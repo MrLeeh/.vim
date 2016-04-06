@@ -14,6 +14,8 @@ set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 set expandtab
+set number
+set cursorline
 
 " Enable Markdown syntax highlighting for *.md files
 au BufRead,BufNewFile *.md set filetype=markdown
