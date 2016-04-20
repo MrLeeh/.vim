@@ -20,36 +20,10 @@ Plugin 'tmhedberg/SimpylFold'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
-" Set 'nocompatible' to ward off unexpected things that your distro might
-" have made, as well as sanely reset options when re-sourcing .vimrc
-set nocompatible              " required
-filetype off                  " required
-
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
-
-" let Vundle manage Vundle, required
-Plugin 'gmarik/Vundle.vim'
-
-" Add all your plugins here (note older versions of Vundle used Bundle instead of Plugin)
-Plugin 'tmhedberg/SimpylFold'
-Plugin 'scrooloose/syntastic'
-Plugin 'nvie/vim-flake8'
-
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
-
-
 " Switch off backups to *.*~ files
 set nobackup
 
 " Enable syntax highlighting and colorscheme
-syntax on
 colorscheme monokai
 
 " Set tabstops size to 4
