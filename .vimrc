@@ -15,10 +15,10 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'tmhedberg/SimpylFold'
-Plugin 'scrooloose/syntastic'
-Plugin 'nvie/vim-flake8'
+" Plugin 'scrooloose/syntastic'
+" Plugin 'nvie/vim-flake8'
 " Bundle 'klen/python-mode'
-Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+" Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 " Bundle 'Valloric/YouCompleteMe'
 
 " All of your Plugins must be added before the following line
