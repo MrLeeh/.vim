@@ -45,6 +45,7 @@ set nowrap
 set autoindent
 set colorcolumn=80
 set noswapfile
+set cm=blowfish2 
 
 " Enable Markdown syntax highlighting for *.md files
 au BufRead,BufNewFile *.md set filetype=markdown
@@ -89,8 +90,6 @@ let g:SimpylFold_docstring_preview=1
 let python_highlight_all=1
 syntax on
 
-" Bclose plugin
-nnoremap bc :Bclose<CR>
 " Expand on Space
 nnoremap <space> za
 nnoremap <space> za
