@@ -13,10 +13,11 @@ Plugin 'gmarik/Vundle.vim'
 
 " Add all your plugins here (note older versions of Vundle used Bundle instead of Plugin)
 Plugin 'scrooloose/nerdtree'
-Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'tmhedberg/SimpylFold'
+Plugin 'nvie/vim-flake8'
+Plugin 'majutsushi/tagbar'
+" Plugin 'jistr/vim-nerdtree-tabs'
 " Plugin 'scrooloose/syntastic'
-" Plugin 'nvie/vim-flake8'
 " Bundle 'klen/python-mode'
 " Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 " Bundle 'Valloric/YouCompleteMe'
@@ -30,6 +31,7 @@ set nobackup
 
 " Enable syntax highlighting and colorscheme
 colorscheme monokai
+" colorscheme dracula
 
 " Set tabstops size to 4
 set tabstop=4
@@ -93,3 +95,4 @@ syntax on
 " Expand on Space
 nnoremap <space> za
 nnoremap <space> za
+nmap <F8> :TagbarToggle<CR>
