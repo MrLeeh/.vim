@@ -18,6 +18,8 @@ Plugin 'nvie/vim-flake8'
 Plugin 'majutsushi/tagbar'
 Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/nerdcommenter'
+Plugin 'vim-scripts/indentpython.vim'
+" Plugin 'jedi-vim'
 " Plugin 'scrooloose/syntastic'
 " Plugin 'jistr/vim-nerdtree-tabs'
 " Bundle 'klen/python-mode'
@@ -40,13 +42,11 @@ set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 set expandtab
-filetype plugin indent on
 
 " useful tweaks
 set number
 set cursorline
 set nowrap
-set autoindent
 set colorcolumn=80
 set noswapfile
 set cm=blowfish2 
