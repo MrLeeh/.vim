@@ -19,12 +19,12 @@ Plugin 'majutsushi/tagbar'
 Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'vim-scripts/indentpython.vim'
-Plugin 'jedi-vim'
+" Plugin 'davidhalter/jedi-vim'
 " Plugin 'scrooloose/syntastic'
 " Plugin 'jistr/vim-nerdtree-tabs'
 " Bundle 'klen/python-mode'
 " Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
-" Bundle 'Valloric/YouCompleteMe'
+Bundle 'Valloric/YouCompleteMe'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -83,6 +83,7 @@ nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
 " code folding
+" ------------
 set foldmethod=indent
 set foldlevel=99
 " Enable folding with the spacebar
@@ -98,3 +99,21 @@ syntax on
 nnoremap <space> za
 nnoremap <space> za
 nmap <F8> :TagbarToggle<CR>
+
+" search settings
+" ---------------
+set ignorecase
+set smartcase
+
+" Add the virtualenv's site-packages to vim path
+if has('python')
+py << EOF
+import os.path
+import sys
+if 'VIRTUAL_ENV' in os.environ:
+    project_base_dir = os.environ['VIRTUAL_ENV']
+    sys.path.insert(0, project_base_dir)
+    activate_this = os.path.join(project_base_dir, 'bin/activate_this.py')
+    execfile(activate_this, dict(__file__=activate_this))
+EOF
+endif
