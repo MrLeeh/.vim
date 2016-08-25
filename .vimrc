@@ -24,7 +24,7 @@ Plugin 'vim-scripts/indentpython.vim'
 " Plugin 'jistr/vim-nerdtree-tabs'
 " Bundle 'klen/python-mode'
 " Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
-Bundle 'Valloric/YouCompleteMe'
+" Bundle 'Valloric/YouCompleteMe'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
