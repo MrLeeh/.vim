@@ -26,7 +26,7 @@ Plugin 'tell-k/vim-autopep8'
 " Plugin 'jistr/vim-nerdtree-tabs'
 " Bundle 'klen/python-mode'
 " Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
-Bundle 'Valloric/YouCompleteMe'
+" Bundle 'Valloric/YouCompleteMe'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
