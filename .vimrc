@@ -19,6 +19,8 @@ Plugin 'majutsushi/tagbar'
 Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'vim-scripts/indentpython.vim'
+Plugin 'tell-k/vim-autopep8'
+
 " Plugin 'davidhalter/jedi-vim'
 " Plugin 'scrooloose/syntastic'
 " Plugin 'jistr/vim-nerdtree-tabs'
